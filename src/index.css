@@ -6,6 +6,7 @@ body{
     margin:0;
     padding:0;
     background-color: #d7d7d7;
+    overflow-x: hidden;
 }
 
 .flexad{
@@ -35,3 +36,15 @@ body{
   width: fit-content;
   animation: typing 2s steps(20, end), blink 0.75s step-end infinite;
 }
+.profile-image-container {
+  margin-top: -40px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.profile-image-container img {
+  width: 140px;
+  height: auto;
+  border-radius: 9999px; /* fully rounded */
+}
+

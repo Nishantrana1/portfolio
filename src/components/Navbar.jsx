@@ -23,8 +23,9 @@ const Navbar = () => {
                         <NavLink to="/" onClick={handleNavClick}><li>Home</li></NavLink>
                         <HashLink smooth to="/#About" onClick={handleNavClick}><li>About me</li></HashLink>
                         <HashLink smooth to="/#Skills" onClick={handleNavClick}><li>My Skills</li></HashLink>
-                        <NavLink to="/Projects" onClick={handleNavClick}><li>My Projects</li></NavLink>
-                        <NavLink to="/Contact" onClick={handleNavClick} className="bg-white text-black font-bold px-6 py-2 rounded-full"> CONTACT ME </NavLink>
+                        <NavLink to="/projects" onClick={handleNavClick}><li>My Projects</li></NavLink>
+                        <NavLink to="/contact" onClick={handleNavClick} className="bg-white text-black font-bold px-6 py-2 rounded-full">CONTACT ME</NavLink>
+
                     </ul>
                 </div>
             </nav>

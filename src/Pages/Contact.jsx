@@ -1,50 +1,68 @@
-import React from 'react'
+import React from 'react';
 
 function Contact() {
-    const contactdetails = [
-        { label: 'Contact No.', value: '8544755798' },
-        { label: 'E-mail:', value: '94187nishant@gmail.com', type: 'email' },
-        { label: 'GitHub:', value: 'https://github.com/Nishantrana1', type: 'link' },
-        { label: 'LinkedIn:', value: 'https://www.linkedin.com/in/nishant-6362652a4/', type: 'link' }
-    ];
-    return (
-        <div id='Contact' className='flexad w-full'>
-            <div className=' flexad flex-col my-30 w-full'>
-                <div className="border-6 h-16 w-52 flexad text-3xl font-bold">CONTACT ME</div>
-                <div className='md: flexad flex-col mt-16 w-full'>
-                    <div className=" w-[95%] md:w-3/5 text-center">
-                        <p className="text-2xl">Have a project in mind or just want to say Hello?
-                            Have a seat:)
-                            <br></br>
-                            Feel free to reach out — I'm always open to new opportunities, collaborations, or tech talk!
-                        </p>
-                        <br />
-                        {contactdetails.map(({ label, value, type }, index) => (
-                            <p key={index} className="text-xl md:text-2xl flex justify-start">
-                                <span className='font-bold px-1 '>{label}:</span>
-                                {type === 'link' ? (
-                                    <a href={value} target="_blank" rel="noopener noreferrer" className="underline">{value}</a>
-                                ) : type === 'email' ? (
-                                    <a href={`mailto:${value}`} className="underline">{value}</a>
-                                ) : value}
-                            </p>
-                        ))}
-                    </div>
-                    <div className="h-[1px] w-full border flexad text-4xl font-bold my-16">Or</div>
-                    <div className="right w-full md:w-1/2 flex flex-col">
-                        <h1 className='text-gray-700 font-bold text-center text-2xl mb-5 underline' >FORM </h1>
-                        <input type="text" className='contactad =' placeholder='Enter Your Name' />
+  const contactdetails = [
+    { label: 'Contact No.', value: '8544755798' },
+    { label: 'E-mail:', value: '94187nishant@gmail.com', type: 'email' },
+    { label: 'GitHub:', value: 'https://github.com/Nishantrana1', type: 'link' },
+    { label: 'LinkedIn:', value: 'https://www.linkedin.com/in/nishant-6362652a4/', type: 'link' }
+  ];
 
-                        <input type="email" className='contactad' placeholder='Enter your Email' />
+  return (
+    <div id="Contact" className="w-full min-h-screen bg-black text-white flex justify-center items-center px-4">
+      <div className="flex flex-col w-full max-w-4xl py-20">
+        <div className="text-3xl font-bold border-b-2 pb-4 mb-8">CONTACT ME</div>
 
-                        <textarea name="Text" className='m-5 border-4 border-t-0 border-r-0 h-16 px-3' placeholder='Enter Your Message'></textarea>
-
-                        <input type="submit" value="SUBMIT" className='m-5 border-x-2 w-28 px-5 text-xl font-bold self-center h-8' />
-                    </div>
-                </div>
-            </div>
+        <div className="mb-10">
+          <p className="text-xl mb-4 text-gray-300">
+            Have a project in mind or just want to say hello? Feel free to reach out — I'm always open to new opportunities, collaborations, or tech talk!
+          </p>
+          {contactdetails.map(({ label, value, type }, index) => (
+            <p key={index} className="text-lg mb-2">
+              <span className="font-bold text-white">{label}:</span>{' '}
+              {type === 'link' ? (
+                <a href={value} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                  {value}
+                </a>
+              ) : type === 'email' ? (
+                <a href={`mailto:${value}`} className="underline text-blue-400">
+                  {value}
+                </a>
+              ) : (
+                value
+              )}
+            </p>
+          ))}
         </div>
-    )
+
+        <div className="border-t-2 my-6 text-center text-xl text-gray-400">OR</div>
+
+        <div className="flex flex-col gap-4">
+          <h2 className="text-center text-xl font-bold underline">FORM</h2>
+
+          <input
+            type="text"
+            className="p-3 border border-gray-600 bg-black text-white rounded"
+            placeholder="Enter Your Name"
+          />
+          <input
+            type="email"
+            className="p-3 border border-gray-600 bg-black text-white rounded"
+            placeholder="Enter Your Email"
+          />
+          <textarea
+            className="p-3 border border-gray-600 bg-black text-white rounded h-28 resize-none"
+            placeholder="Enter Your Message"
+          />
+          <input
+            type="submit"
+            value="SUBMIT"
+            className="self-center px-6 py-2 border border-blue-400 rounded text-blue-400 font-bold hover:bg-blue-400 hover:text-black cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

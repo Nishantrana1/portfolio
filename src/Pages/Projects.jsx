@@ -1,8 +1,24 @@
 import React from 'react'
+console.log("Projects Page Rendered");
 
 
 function Projects() {
   const projectDetails=[
+    
+  {
+    gifpath: 'https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif',
+    githublink: 'https://github.com/Nishantrana1/sample-project',
+    pagelink: 'https://nishantrana1.github.io/sample-project/',
+    description: 'This is a sample project to showcase animations using React and TailwindCSS.',
+  },
+  {
+    gifpath: 'https://media.giphy.com/media/l0HlQ7LRalQWf43lK/giphy.gif',
+    githublink: 'https://github.com/Nishantrana1/another-project',
+    pagelink: 'https://nishantrana1.github.io/another-project/',
+    description: 'Another cool project made with JavaScript and Firebase.',
+  },
+
+
 
   ];
 
