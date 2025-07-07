@@ -1,10 +1,10 @@
-# 🧑‍💻 Om Handa's Developer Portfolio
+# 🧑‍💻 Nishant Developer Portfolio
 
 A modern and responsive personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**, showcasing my projects, skills, and contact details.
 
 ## 🚀 Live Demo
 
-🔗 [Visit Portfolio](https://om-handa.github.io/Portfolio)
+🔗 [Visit Portfolio](https://nishantrana1.github.io/portfolio)
 
 ---
 
@@ -42,7 +42,7 @@ A modern and responsive personal portfolio website built using **React**, **Vite
 ## 🧪 Run Locally
 
 ```bash
-git clone https://github.com/Om-Handa/portfolio.git
+git clone https://github.com/Nishantrana1/portfolio.git
 cd portfolio
 npm install
 npm run dev
