@@ -21,10 +21,10 @@ const Navbar = () => {
                     <ul
                         className={`flex flex-col md:flex-row items-center gap-6 text-white absolute md:static top-full left-0 w-full bg-black md:bg-transparent transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 py-4 opacity-100' : 'max-h-0 md:max-h-none py-0 opacity-0 md:py-0 md:opacity-100'} `}>
                         <NavLink to="/" onClick={handleNavClick}><li>Home</li></NavLink>
-                        <HashLink smooth to="/#About" onClick={handleNavClick}><li>About me</li></HashLink>
-                        <HashLink smooth to="/#Skills" onClick={handleNavClick}><li>My Skills</li></HashLink>
-                        <NavLink to="/projects" onClick={handleNavClick}><li>My Projects</li></NavLink>
-                        <NavLink to="/contact" onClick={handleNavClick} className="bg-white text-black font-bold px-6 py-2 rounded-full">CONTACT ME</NavLink>
+                        <HashLink smooth to="#About" onClick={handleNavClick}><li>About me</li></HashLink>
+                        <HashLink smooth to="#Skills" onClick={handleNavClick}><li>My Skills</li></HashLink>
+                        <NavLink to="/Projects" onClick={handleNavClick}><li>My Projects</li></NavLink>
+                        <NavLink to="/Contact" onClick={handleNavClick} className="bg-white text-black font-bold px-6 py-2 rounded-full">CONTACT ME</NavLink>
 
                     </ul>
                 </div>
