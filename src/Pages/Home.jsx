@@ -12,11 +12,11 @@ function Home() {
   return (
     <>
       <main className='relative min-h-screen w-full overflow-x-hidden'>
-  <div className="flex flex-col-reverse md:flex-row w-full min-h-screen">
+  <div className="flex flex-col-reverse md:flex-row w-full min-h-[70vh]">
 
-          <div className="flex flex-col items-center md:items-start justify-center md:px-50 relative bg-[#d7d7d7] w-full md:w-1/2 h-full z-10" style={{ clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}>
-            <div className='flex md:hidden mt-[-40px] mb-3 justify-center relative'>
-  <img className="w-36 h-36 rounded-full object-cover border-8 border-black shadow-lg" src={Me} alt="" />
+          <div className="flex flex-col items-center md:items-start justify-center md:px-50 relative bg-[#d7d7d7] w-full z-10">
+            <div className='flex md:hidden mt-[40px] mb-3 justify-center relative'>
+  <img className="w-45 h-45 rounded-full object-cover border-8 border-black shadow-lg" src={Me} alt="" />
 </div>
 
 
@@ -27,7 +27,7 @@ function Home() {
 <p className="text-4xl md:text-6xl font-bold">Nishant</p>
 <p className="text-lg md:text-xl font-bold text-[#909090]">Arduino Developer</p>
 
-            <a href="https://drive.google.com/file/d/..." className='w-full flexad' target='_blank'>
+            <a href="https://drive.google.com/file/d/1wq9A5joqdll2kqu2pUy4awqCGKVK0sdI/view?usp=sharing" className='w-full flexad' target='_blank'>
   <button className="bg-black text-white h-12 w-full font-bold text-xl rounded-2xl my-6">
     Download Resume
   </button>
